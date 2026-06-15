@@ -2,9 +2,31 @@ Architectural Specification:
 
 This document details the abstract architectural patterns, component boundaries, and state-transfer mechanics of the framework.
 
-System Topology
-
+### System Topology
 The system uses a sequential, deterministic pipeline to manage the flow of context from raw environmental signals to final action execution.
+
+```text
+   [ External Environment ]
+              │
+              ▼
+   ┌──────────────────────┐
+   │    src/observer/     │  ◄── State harvesting & parsing
+   └──────────┬───────────┘
+              │ (Raw Payload)
+              ▼
+   ┌──────────────────────┐
+   │   src/evaluator/     │  ◄── Persona conditioning & risk scoring
+   └──────────┬───────────┘
+              │ (Scored Context)
+              ▼
+   ┌──────────────────────┐
+   │  src/communicator/   │  ◄── External routing & human validation
+   └──────────┬───────────┘
+              │ (Verified Token)
+              ▼
+   ┌──────────────────────┐
+   │    src/executor/     │  ◄── Bounded execution & audit logging
+   └──────────────────────┘
 
 Component Boundaries
 
