@@ -43,5 +43,39 @@ src/evaluator/ - Role-conditioned reasoning modules.
 src/communicator/ - Real-time alerting and communication handlers.
 src/executor/ - Execution modules containing strict guardrails.
 
+Folder/file structure:
+
+abstract-orchestration-framework/
+├── README.md
+├── requirements.txt
+├── docs/
+│   ├── ARCHITECTURE.md
+│   ├── CONFIDENCE_TIERING.md
+│   ├── HUMAN_AI_COLLABORATION.md
+│   └── STAGED_AUTONOMY.md
+└── src/
+    ├── __init__.py
+    ├── observer/
+    │   ├── __init__.py
+    │   ├── base_observer.py
+    │   └── stream_handler.py
+    ├── evaluator/
+    │   ├── __init__.py
+    │   ├── engine.py
+    │   └── personas/
+    │       ├── __init__.py
+    │       ├── base_persona.py
+    │       └── contrarian.py
+    ├── communicator/
+    │   ├── __init__.py
+    │   ├── interface.py
+    │   └── webhooks/
+    │       └── messaging_stub.py
+    └── executor/
+        ├── __init__.py
+        ├── gatekeeper.py
+        └── guardrails.py
+
+
 
 
