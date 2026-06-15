@@ -27,7 +27,5 @@ Immutable logging ledgers; real-time performance rollback triggers.
 Promotion Criteria:
 
 Statistical Stability: Transitioning between phases requires zero unhandled system exceptions over a predefined operational cycle.
-
 Confidence Divergence Threshold: Persona disagreement ratios must remain below strict percentage parameters during stress evaluations.
-
 Fail-Safe Efficacy: Simulated boundary violation injections must achieve a 100% mitigation and rollback rate before pipeline advancement
