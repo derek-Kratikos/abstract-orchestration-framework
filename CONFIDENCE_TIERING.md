@@ -18,5 +18,7 @@ Threshold Verification: The system evaluates the score against hardcoded configu
 Route Allocation:
 
 🟢 Path: Bypasses external communication queues and routes straight to the Executor module.
+
 🟡 Path: Encapsulates the state context into a secure token, dispatches a notification payload via the Communicator stub, and listens for an incoming signature token.
+
 🔴 Path: Triggers a hard pass signal with an error condition, preventing any communication hand-off to the Executor.
