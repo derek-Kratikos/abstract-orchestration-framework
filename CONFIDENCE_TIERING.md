@@ -1,26 +1,14 @@
-Confidence Tiering & Dynamic Routing Specification
-
+### Confidence Tiering & Dynamic Routing Specification
 This document defines the abstract metric evaluation framework used to categorize risk and dynamically route payloads through human-in-the-loop safety checkpoints.
 
-Classification Matrix
+#### Classification Matrix
 The framework translates non-deterministic confidence intervals and environmental threat scores into three operational risk tiers:
 
-Tier, Risk Profile, Operational Mode, Execution Gate
- 
-🟢 Low
-High confidence score; environmental telemetry within normal baseline parameters.
-Fully Autonomous
-Immediate execution; background audit logging only.
-
-🟡 Medium
-Moderate variance or anomaly detected; system state requires secondary verification.
-Human-in-the-Loop
-Execution halts. Requires explicit out-of-band administrative approval.
-
-🔴 High
-Critical validation failure, severe environmental drift, or low-confidence analysis.
-Hard Fail-Safe
-Execution blocks immediately. System rollbacks triggered; administrative alert dispatched.
+| Tier | Risk Profile | Operational Mode | Execution Gate |
+| :--- | :--- | :--- | :--- |
+| 🟢 **Low** | High confidence score; environmental telemetry within normal baseline parameters. | Fully Autonomous | Immediate execution; background audit logging only. |
+| 🟡 **Medium** | Moderate variance or anomaly detected; system state requires secondary verification. | Human-in-the-Loop | Execution halts. Requires explicit out-of-band administrative approval. |
+| 🔴 **High** | Critical validation failure, severe environmental drift, or low-confidence analysis. | Hard Fail-Safe | Execution blocks immediately. System rollbacks triggered; administrative alert dispatched. |
 
 Dynamic Routing Logic:
 
