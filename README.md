@@ -34,17 +34,18 @@ Deterministic Isolation: Core system logic is strictly decoupled from the interf
 Versatility First: The pipeline maps natively to any asset-heavy or volatile stream, including high-value logistics telemetry, fintech tracking, and automated underwriting engines.
 Fail-Safe Constraints: Any state parsing irregularity, timeout, or validation mismatch automatically triggers a hard pass signal with error condition advising a system rollback with administrator alert.
 
-Technical Overview & Setup
+## Technical Overview & Setup
 
-Core Structure
+| Module | Core Responsibility |
+| :--- | :--- |
+| **src/observer/** | Environment-monitoring query engine with qualifying criteria. |
+| **src/evaluator/** | Role-conditioned reasoning modules and persona constraints. |
+| **src/communicator/** | Real-time alerting, webhook stubs, and interface handlers. |
+| **src/executor/** | Execution modules containing strict, deterministic guardrails. |
 
-src/observer/ - Environment-monitoring query engine with qualifying criteria
-src/evaluator/ - Role-conditioned reasoning modules.
-src/communicator/ - Real-time alerting and communication handlers.
-src/executor/ - Execution modules containing strict guardrails.
+### Core Project Architecture
 
-Folder/file structure:
-
+```text
 abstract-orchestration-framework/
 ├── README.md
 ├── requirements.txt
