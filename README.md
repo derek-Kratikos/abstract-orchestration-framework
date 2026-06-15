@@ -8,16 +8,15 @@ Core Operational Flow:
 
 The framework orchestrates data and agent logic through a rigid four-stage sequential pipeline:
 
-Phase Core Responsibility
- 
-1. Observer Phase
-Continuously harvests raw data feeds, telemetry, or external signals for a targeted high-risk environment.
-2. Evaluator Phase
-Conditions an intelligent engine into specialized runtime personas (arbiter, analyst, etc) to process the context, assign threat/confidence metrics, and verify risk tolerances.
-3. Communicator Phase
-Packages payload and dispatches a structured advisory alert to an external notification channel for real-time human review. (ex. Telegram, Whatsapp) 
-4. Executor Phase
-Commits operation once the human in the loop has approved a transaction request and the financial payment will be allocated and the transaction will be executed and recorded as successful.
+### Core Operational Flow
+The framework orchestrates data and agent logic through a rigid four-stage sequential pipeline:
+
+| Phase | Core Responsibility |
+| :--- | :--- |
+| **1. Observer Phase** | Continuously harvests raw data feeds, telemetry, or external signals for a targeted high-risk environment. |
+| **2. Evaluator Phase** | Conditions an intelligent engine into specialized runtime personas (arbiter, analyst, etc.) to process the context, assign threat/confidence metrics, and verify risk tolerances. |
+| **3. Communicator Phase** | Packages payload and dispatches a structured advisory alert to an external notification channel for real-time human review (e.g., Telegram, WhatsApp). |
+| **4. Executor Phase** | Commits operation once the human-in-the-loop has approved a transaction request, allocating the financial payment, executing the transaction, and logging it as successful. |
 
 Repository Architecture
 
