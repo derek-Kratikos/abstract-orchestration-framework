@@ -7,9 +7,9 @@ The progression framework transitions system execution control from rigid human 
 
 | Phase | Classification | Routing Mechanics | Safety Parameters |
 | :--- | :--- | :--- | :--- |
-| **Phase 1** | Human-Conditioned Verification | 100% of Evaluator payloads require explicit Communicator interface signature approval. | Hard execution fences; tight capital caps; strict timeouts. |
-| **Phase 2** | Dynamic Context Routing | Payloads route dynamically based on confidence scores. Low-risk paths skip human gating. | Statistical drift tracking; multi-persona anomaly verification checks. |
-| **Phase 3** | Bounded Optimization Mode | Autonomous scaling of parameter depth within verified simulation limits. | Immutable logging ledgers; real-time performance rollback triggers. |
+| **1** | Human-Conditioned Verification | 100% of Evaluator payloads require explicit Communicator interface signature approval. | Hard execution fences; tight capital caps; strict timeouts. |
+| **2** | Dynamic Context Routing | Payloads route dynamically based on confidence scores. Low-risk paths skip human gating. | Statistical drift tracking; multi-persona anomaly verification checks. |
+| **3** | Bounded Optimization Mode | Autonomous scaling of parameter depth within verified simulation limits. | Immutable logging ledgers; real-time performance rollback triggers. |
 
 Promotion Criteria:
 
